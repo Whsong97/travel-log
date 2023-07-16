@@ -1,0 +1,114 @@
+body {
+    --color-primary: rgb(0, 225, 255);
+    --color-primary-dark:black;
+    --color-secondary:rgb(2, 51, 36);
+    --color-error:rgb(255, 0, 4);
+    --color-success:green;
+    --border-radius: 4px;
+
+    margin: 0;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background: url(./pexels-darren-lawrence-3417784.jpeg);
+    background-size:cover;
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1 rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px black;
+    border-radius: var(--border-radius);
+    opacity: 70;
+
+}
+
+
+.form--hidden {
+    display:none;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-top: 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.form__message--success {
+    color: var (--color-success);
+}
+
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius:var (--border-radius);
+    outline: none;
+}
+
+.form__input--error {
+    color:var (--color-error);
+    border-color: var(--color-error)
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+
+}
+
+.form__button {
+    width: 30%;
+    padding: 1rem 2 rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background:var(--color-primary);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+.form__link {
+    color: var(--color-secondary);
+    text-decoration:none;
+    cursor: pointer;
+}
+.form__link:hover {
+    text-decoration:underline;
+} 
